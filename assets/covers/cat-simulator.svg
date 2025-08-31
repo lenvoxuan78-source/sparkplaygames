@@ -1,0 +1,59 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Paw prints decoration -->
+  <g fill="#fff" opacity="0.15">
+    <g transform="translate(150,100)">
+      <circle cx="0" cy="0" r="12"/>
+      <circle cx="-15" cy="20" r="8"/>
+      <circle cx="15" cy="20" r="8"/>
+      <circle cx="-8" cy="35" r="6"/>
+      <circle cx="8" cy="35" r="6"/>
+    </g>
+    <g transform="translate(1000,450) scale(0.8)">
+      <circle cx="0" cy="0" r="12"/>
+      <circle cx="-15" cy="20" r="8"/>
+      <circle cx="15" cy="20" r="8"/>
+      <circle cx="-8" cy="35" r="6"/>
+      <circle cx="8" cy="35" r="6"/>
+    </g>
+  </g>
+  
+  <!-- Cat silhouette -->
+  <g transform="translate(100,250)" fill="#fff" opacity="0.9" filter="url(#shadow)">
+    <!-- Cat body -->
+    <ellipse cx="100" cy="80" rx="80" ry="40"/>
+    <!-- Cat head -->
+    <circle cx="40" cy="40" r="35"/>
+    <!-- Cat ears -->
+    <polygon points="15,15 25,40 35,20"/>
+    <polygon points="45,20 55,40 65,15"/>
+    <!-- Cat tail -->
+    <path d="M180,80 Q220,60 200,100 Q190,120 200,140" stroke="#fff" stroke-width="15" fill="none"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#fff" filter="url(#shadow)" text-anchor="middle">
+    Cat Simulator
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="28" fill="#fff" opacity="0.9" text-anchor="middle">
+    3D Sandbox • Cozy • Pet Life
+  </text>
+  
+  <!-- Brand -->
+  <text x="600" y="550" font-family="Arial, sans-serif" font-size="20" fill="#fff" opacity="0.8" text-anchor="middle">
+    Spark Play Games
+  </text>
+</svg>

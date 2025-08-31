@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Simulator - Virtual Pet Life Simulation | Spark Play Games</title>
+    <meta name="description" content="Experience the cozy life of a virtual cat in this charming pet simulation. Explore, play, hunt, and live the perfect feline lifestyle in a beautiful 3D world.">
+    <link rel="canonical" href="https://sparkplaygames.com/games/cat-simulator/">
+    <meta property="og:title" content="Cat Simulator - Virtual Pet Life Simulation">
+    <meta property="og:description" content="Experience the cozy life of a virtual cat in this charming pet simulation. Explore and live the perfect feline lifestyle.">
+    <meta property="og:image" content="https://sparkplaygames.com/assets/covers/cat-simulator.svg">
+    <meta property="og:url" content="https://sparkplaygames.com/games/cat-simulator/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cat Simulator - Virtual Pet Life Simulation">
+    <meta name="twitter:description" content="Experience the cozy life of a virtual cat in this charming pet simulation.">
+    <meta name="twitter:image" content="https://sparkplaygames.com/assets/covers/cat-simulator.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Cat Simulator",
+      "description": "Experience life as a cat in this fun and relaxing simulation game.",
+      "genre": ["Simulator", "Casual", "Pet"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Any",
+      "url": "https://sparkplaygames.com/games/cat-simulator/",
+      "image": "https://sparkplaygames.com/assets/covers/cat-simulator.svg",
+      "publisher": {"@type":"Organization","name":"Spark Play Games","url":"https://sparkplaygames.com"},
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+    }
+    </script>
+    <style>
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .game-frame {
+                height: 400px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sparkplaygames.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Games",
+                "item": "https://sparkplaygames.com/games/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Cat Simulator",
+                "item": "https://sparkplaygames.com/games/cat-simulator/"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Cat Simulator",
+        "description": "Experience the cozy life of a virtual cat in this charming pet simulation with realistic behaviors and peaceful gameplay.",
+        "genre": ["Simulation", "Casual", "Pet"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "url": "https://sparkplaygames.com/games/cat-simulator/",
+        "image": "https://sparkplaygames.com/assets/covers/cat-simulator.svg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Spark Play Games",
+            "url": "https://sparkplaygames.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="text-xl font-bold text-brand">Spark Play Games</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-gray-700 hover:text-brand">Home</a>
+                    <a href="../../genre/index.html" class="text-gray-700 hover:text-brand">Genres</a>
+                    <a href="../../best/index.html" class="text-gray-700 hover:text-brand">Collections</a>
+                    <a href="../../about/index.html" class="text-gray-700 hover:text-brand">About</a>
+                    <a href="../../contact/index.html" class="text-gray-700 hover:text-brand">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-700 hover:text-brand" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="block text-gray-700 hover:text-brand py-2">Home</a>
+                <a href="../../genre/index.html" class="block text-gray-700 hover:text-brand py-2">Genres</a>
+                <a href="../../best/index.html" class="block text-gray-700 hover:text-brand py-2">Collections</a>
+                <a href="../../about/index.html" class="block text-gray-700 hover:text-brand py-2">About</a>
+                <a href="../../contact/index.html" class="block text-gray-700 hover:text-brand py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <nav class="text-sm mb-8">
+            <ol class="flex space-x-2 text-gray-500">
+                <li><a href="../../index.html" class="hover:text-brand">Home</a></li>
+                <li>/</li>
+                <li><a href="../index.html" class="hover:text-brand">Games</a></li>
+                <li>/</li>
+                <li class="text-gray-900">Cat Simulator</li>
+            </ol>
+        </nav>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div class="p-6">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">Cat Simulator</h1>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Simulator</span>
+                            <span class="text-gray-500">•</span>
+                            <span class="text-gray-600">Free to Play</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <iframe 
+                    src="https://www.onlinegames.io/games/2022/unity4/cat-simulator/index.html"
+                    class="game-frame"
+                    sandbox="allow-scripts allow-same-origin allow-pointer-lock"
+                    allow="fullscreen; autoplay; clipboard-read; clipboard-write; gamepad *"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    title="Cat Simulator Game">
+                </iframe>
+                <div class="frame-fallback" role="note" style="margin-top:12px">
+                    If the game frame is blocked by the source,
+                    <a href="https://www.onlinegames.io/games/2022/unity4/cat-simulator/index.html" target="_blank" rel="noopener">open it in a new tab</a>.
+                </div>
+                <div id="game-error" class="hidden bg-red-50 border border-red-200 rounded-lg p-6 text-center mt-4">
+                    <h3 class="text-red-800 font-semibold mb-2">Game Loading Issue</h3>
+                    <p class="text-red-600 mb-4">The game couldn't load in the embedded player. This might be due to browser restrictions.</p>
+                    <a href="https://www.onlinegames.io/games/2022/unity4/cat-simulator/index.html" target="_blank" rel="noopener" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        Play in New Tab
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">About Cat Simulator</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                        <p>Step into the paws of a virtual feline and experience the world from a cat's perspective in this delightful and relaxing simulation game. Cat Simulator offers a unique gaming experience where you can live the carefree life of a house cat, complete with all the quirky behaviors and simple pleasures that make cats so endearing.</p>
+
+                        <p>Explore a beautifully crafted 3D environment designed to capture the essence of a cat's world. From cozy indoor spaces filled with furniture to climb and hiding spots to explore, to outdoor areas with gardens, trees, and interesting scents to investigate, every corner of this virtual world is designed with feline curiosity in mind.</p>
+
+                        <p>The game perfectly captures the daily rhythms of cat life—you can spend time playing with toys, chasing mice, knocking objects off tables (as any proper cat should), taking long naps in sunny spots, and interacting with your human family members. Each activity is designed to be both entertaining and authentically cat-like, creating an immersive experience that cat lovers will instantly recognize and appreciate.</p>
+
+                        <p>What makes Cat Simulator truly special is its attention to realistic cat behaviors and physics. Your virtual cat moves with the fluid grace of a real feline, complete with proper jumping mechanics, stalking behaviors, and that unmistakable cat curiosity that drives exploration. The game's developers have clearly spent time observing real cats to create animations and behaviors that feel genuine and charming.</p>
+
+                        <p>Whether you're a cat owner missing your pet, someone who can't have a cat but loves them, or simply looking for a peaceful gaming experience that doesn't involve combat or competition, Cat Simulator provides a perfect virtual companion. It's the ultimate stress-relief game, offering the therapeutic benefits of pet interaction without any of the responsibilities.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">What activities can I do as a virtual cat?</h3>
+                            <p class="text-gray-700">As a virtual cat, you can engage in all the classic feline activities! Play with various toys like balls of yarn and toy mice, hunt small creatures, climb furniture and trees, knock objects off surfaces, take naps in comfortable spots, interact with family members, explore both indoor and outdoor environments, and even engage in typical cat mischief. The game includes realistic cat behaviors like purring, meowing, and stretching.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Is Cat Simulator suitable for children?</h3>
+                            <p class="text-gray-700">Absolutely! Cat Simulator is perfectly family-friendly and suitable for players of all ages. The game contains no violence, inappropriate content, or challenging gameplay that might frustrate younger players. It's actually an excellent choice for children who love animals, as it teaches empathy and responsibility while providing a fun, educational experience about pet care and animal behavior.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I customize my virtual cat?</h3>
+                            <p class="text-gray-700">The game offers various customization options to make your virtual cat unique. You can often choose different coat colors, patterns, and sometimes even accessories. Some versions allow you to select different breeds or modify your cat's appearance to match your real pet. The customization features help create a more personal connection with your virtual feline companion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Game Features</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Realistic cat behaviors and animations</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Beautiful 3D environments to explore</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Interactive toys and objects</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Relaxing and stress-free gameplay</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Family-friendly content</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Authentic cat sound effects</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Similar Games</h3>
+                    <div class="space-y-4">
+                        <a href="/games/farming-island/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Farming Island</h4>
+                            <p class="text-sm text-gray-600">Relaxing farming simulator</p>
+                        </a>
+                        <a href="/games/voxel-world/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Voxel World</h4>
+                            <p class="text-sm text-gray-600">Creative building game</p>
+                        </a>
+                        <a href="/games/love-tester/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Love Tester</h4>
+                            <p class="text-sm text-gray-600">Fun casual entertainment</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2025 Spark Play Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        const gameError = document.getElementById('game-error');
+        
+        // Analytics event placeholders for future GA4 integration
+        function trackEvent(eventName, eventData) {
+            // Placeholder for Google Analytics tracking
+            // Example: gtag('event', eventName, eventData);
+            console.log('Analytics event:', eventName, eventData);
+        }
+        
+        // Track game view
+        trackEvent('game_view', {
+            game_name: 'Cat Simulator',
+            game_genre: 'Simulator'
+        });
+        
+        iframe.addEventListener('error', function() {
+            trackEvent('iframe_error', {
+                game_name: 'Cat Simulator',
+                error_type: 'iframe_load_error'
+            });
+            iframe.style.display = 'none';
+            gameError.classList.remove('hidden');
+        });
+        
+        // Fallback timeout check
+        setTimeout(function() {
+            try {
+                iframe.contentDocument;
+            } catch (e) {
+                // Cross-origin restriction detected, show fallback
+                trackEvent('iframe_error', {
+                    game_name: 'Cat Simulator',
+                    error_type: 'cross_origin_restriction'
+                });
+                iframe.style.display = 'none';
+                gameError.classList.remove('hidden');
+            }
+        }, 5000);
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

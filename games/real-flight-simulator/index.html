@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Flight Simulator - Realistic Aviation Experience | Spark Play Games</title>
+    <meta name="description" content="Arcade-style flight sim with dogfights and weapons. Master takeoffs, landings, and quick missions in your browser.">
+    <link rel="canonical" href="https://sparkplaygames.com/games/real-flight-simulator/">
+    <meta property="og:title" content="Real Flight Simulator - Realistic Aviation Experience">
+    <meta property="og:description" content="Experience realistic flight simulation with authentic aircraft controls and stunning environments.">
+    <meta property="og:image" content="https://sparkplaygames.com/assets/covers/real-flight-simulator.svg">
+    <meta property="og:url" content="https://sparkplaygames.com/games/real-flight-simulator/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Real Flight Simulator - Realistic Aviation Experience">
+    <meta name="twitter:description" content="Experience realistic flight simulation with authentic aircraft controls.">
+    <meta name="twitter:image" content="https://sparkplaygames.com/assets/covers/real-flight-simulator.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Real Flight Simulator",
+      "description": "Realistic flight simulation experience with authentic aircraft controls.",
+      "genre": ["Simulator", "Flight", "Realistic"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Any",
+      "url": "https://sparkplaygames.com/games/real-flight-simulator/",
+      "image": "https://sparkplaygames.com/assets/covers/real-flight-simulator.svg",
+      "publisher": {"@type":"Organization","name":"Spark Play Games","url":"https://sparkplaygames.com"},
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+    }
+    </script>
+    <style>
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .game-frame {
+                height: 400px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sparkplaygames.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Games",
+                "item": "https://sparkplaygames.com/games/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Real Flight Simulator",
+                "item": "https://sparkplaygames.com/games/real-flight-simulator/"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Real Flight Simulator",
+        "description": "Realistic aviation experience with authentic aircraft controls, dynamic weather, and comprehensive flight training.",
+        "genre": ["Simulation", "Flight", "Realistic"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "url": "https://sparkplaygames.com/games/real-flight-simulator/",
+        "image": "https://sparkplaygames.com/assets/covers/real-flight-simulator.svg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Spark Play Games",
+            "url": "https://sparkplaygames.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="text-xl font-bold text-brand">Spark Play Games</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-gray-700 hover:text-brand">Home</a>
+                    <a href="../../genre/index.html" class="text-gray-700 hover:text-brand">Genres</a>
+                    <a href="../../best/index.html" class="text-gray-700 hover:text-brand">Collections</a>
+                    <a href="../../about/index.html" class="text-gray-700 hover:text-brand">About</a>
+                    <a href="../../contact/index.html" class="text-gray-700 hover:text-brand">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-700 hover:text-brand" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="block text-gray-700 hover:text-brand py-2">Home</a>
+                <a href="../../genre/index.html" class="block text-gray-700 hover:text-brand py-2">Genres</a>
+                <a href="../../best/index.html" class="block text-gray-700 hover:text-brand py-2">Collections</a>
+                <a href="../../about/index.html" class="block text-gray-700 hover:text-brand py-2">About</a>
+                <a href="../../contact/index.html" class="block text-gray-700 hover:text-brand py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <nav class="text-sm mb-8">
+            <ol class="flex space-x-2 text-gray-500">
+                <li><a href="../../index.html" class="hover:text-brand">Home</a></li>
+                <li>/</li>
+                <li><a href="../index.html" class="hover:text-brand">Games</a></li>
+                <li>/</li>
+                <li class="text-gray-900">Real Flight Simulator</li>
+            </ol>
+        </nav>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div class="p-6">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">Real Flight Simulator</h1>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Simulator</span>
+                            <span class="text-gray-500">•</span>
+                            <span class="text-gray-600">Free to Play</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <iframe
+                    src="https://cloud.onlinegames.io/games/2023/unity2/real-flight-simulator/index.html"
+                    class="game-frame"
+                    sandbox="allow-scripts allow-same-origin allow-pointer-lock"
+                    allow="fullscreen; autoplay; clipboard-read; clipboard-write; gamepad *"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    title="Real Flight Simulator Game">
+                </iframe>
+                <div class="frame-fallback" role="note" style="margin-top:12px">
+                    If the game frame is blocked by the source,
+                    <a href="https://cloud.onlinegames.io/games/2023/unity2/real-flight-simulator/index.html" target="_blank" rel="noopener">open it in a new tab</a>.
+                </div>
+                <div id="game-error" class="hidden bg-red-50 border border-red-200 rounded-lg p-6 text-center mt-4">
+                    <h3 class="text-red-800 font-semibold mb-2">Game Loading Issue</h3>
+                    <p class="text-red-600 mb-4">The game couldn't load in the embedded player. This might be due to browser restrictions.</p>
+                    <a href="https://cloud.onlinegames.io/games/2023/unity2/real-flight-simulator/index.html" target="_blank" rel="noopener" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        Play in New Tab
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">About Real Flight Simulator</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                        <p>Take to the skies in Real Flight Simulator, the most comprehensive and realistic aviation experience available in your browser. This meticulously crafted flight simulation brings the authentic thrill of piloting aircraft to life with stunning attention to detail, realistic physics, and breathtaking aerial environments that capture the true essence of flight.</p>
+
+                        <p>The simulator features an impressive fleet of aircraft ranging from single-engine trainer planes perfect for beginners to complex commercial airliners that challenge even experienced virtual pilots. Each aircraft is modeled with authentic flight characteristics, detailed cockpit instruments, and realistic engine sounds that immerse you completely in the aviation experience. Whether you're interested in leisurely sightseeing flights or challenging cross-country navigation, there's an aircraft perfectly suited to your mission.</p>
+
+                        <p>Environmental realism sets Real Flight Simulator apart from casual flying games. Dynamic weather systems affect your flights with realistic wind patterns, turbulence, and visibility changes that require genuine piloting skills to navigate safely. The detailed terrain includes accurate representations of major airports, recognizable landmarks, and diverse landscapes from urban metropolises to remote mountain ranges and coastal regions.</p>
+
+                        <p>The game's comprehensive flight instruction system makes aviation accessible to newcomers while providing the depth that experienced sim pilots demand. Tutorial missions cover everything from basic aircraft operation and taxi procedures to advanced techniques like instrument flight rules (IFR) navigation and emergency procedures. Progressive difficulty ensures you build real aviation knowledge and skills as you advance through increasingly complex scenarios.</p>
+
+                        <p>Mission variety keeps every flight engaging and purposeful. Transport passengers between major airports, deliver cargo to remote airstrips, perform aerial photography assignments, or undertake search and rescue operations in challenging weather conditions. Each mission type requires different skills and aircraft, encouraging you to master multiple aspects of aviation while exploring diverse flying careers and challenges that real pilots face.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">What aircraft types are available in the simulator?</h3>
+                            <p class="text-gray-700">Real Flight Simulator includes a diverse fleet featuring single-engine training aircraft like Cessna 172s, twin-engine planes, business jets, regional airliners, and large commercial aircraft. Each plane has authentic flight characteristics, detailed cockpit layouts, and realistic performance parameters. You'll start with simpler aircraft and unlock more complex planes as you complete training missions and demonstrate proficiency with advanced systems and procedures.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">How realistic are the flight controls and physics?</h3>
+                            <p class="text-gray-700">The simulator employs sophisticated flight physics that accurately model lift, drag, thrust, and weight interactions. Controls respond realistically to pilot inputs, aircraft performance varies with altitude and weather conditions, and engine management affects fuel consumption and performance. The simulation includes authentic procedures for startup, taxi, takeoff, navigation, approach, and landing that mirror real-world aviation practices.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I learn real aviation skills from this simulator?</h3>
+                            <p class="text-gray-700">Absolutely! While it cannot replace actual flight training, Real Flight Simulator teaches fundamental aviation concepts including aerodynamics, navigation principles, radio procedures, weather interpretation, and emergency procedures. Many concepts you learn—such as reading instruments, understanding flight planning, and developing situational awareness—directly transfer to real aviation. The simulator is an excellent supplement to actual flight training or a great way to explore aviation as a hobby.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Game Features</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Realistic flight physics</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Diverse aircraft fleet</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Dynamic weather systems</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Comprehensive flight training</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Detailed airport environments</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Mission-based gameplay</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Similar Games</h3>
+                    <div class="space-y-4">
+                        <a href="/games/madalin-stunt-cars-pro/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Madalin Stunt Cars Pro</h4>
+                            <p class="text-sm text-gray-600">Realistic vehicle simulation</p>
+                        </a>
+                        <a href="/games/gta-simulator/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">GTA Simulator</h4>
+                            <p class="text-sm text-gray-600">Open-world simulation</p>
+                        </a>
+                        <a href="/games/cat-simulator/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Cat Simulator</h4>
+                            <p class="text-sm text-gray-600">Life simulation game</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2025 Spark Play Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        const gameError = document.getElementById('game-error');
+        
+        // Analytics event placeholders for future GA4 integration
+        function trackEvent(eventName, eventData) {
+            // Placeholder for Google Analytics tracking
+            // Example: gtag('event', eventName, eventData);
+            console.log('Analytics event:', eventName, eventData);
+        }
+        
+        // Track game view
+        trackEvent('game_view', {
+            game_name: 'Real Flight Simulator',
+            game_genre: 'Simulator'
+        });
+        
+        iframe.addEventListener('error', function() {
+            trackEvent('iframe_error', {
+                game_name: 'Real Flight Simulator',
+                error_type: 'iframe_load_error'
+            });
+            iframe.style.display = 'none';
+            gameError.classList.remove('hidden');
+        });
+        
+        // Fallback timeout check
+        setTimeout(function() {
+            try {
+                iframe.contentDocument;
+            } catch (e) {
+                // Cross-origin restriction detected, show fallback
+                trackEvent('iframe_error', {
+                    game_name: 'Real Flight Simulator',
+                    error_type: 'cross_origin_restriction'
+                });
+                iframe.style.display = 'none';
+                gameError.classList.remove('hidden');
+            }
+        }, 5000);
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

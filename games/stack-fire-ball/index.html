@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Fire Ball - Addictive Tower Smashing Game | Spark Play Games</title>
+    <meta name="description" content="Smash through colorful tower stacks in this addictive arcade game. Tap and hold to break platforms while avoiding traps in Stack Fire Ball.">
+    <link rel="canonical" href="https://sparkplaygames.com/games/stack-fire-ball/">
+    <meta property="og:title" content="Stack Fire Ball - Addictive Tower Smashing Game">
+    <meta property="og:description" content="Smash through colorful tower stacks in this addictive arcade game. Tap and hold to break platforms while avoiding traps.">
+    <meta property="og:image" content="https://sparkplaygames.com/assets/covers/stack-fire-ball.svg">
+    <meta property="og:url" content="https://sparkplaygames.com/games/stack-fire-ball/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stack Fire Ball - Addictive Tower Smashing Game">
+    <meta name="twitter:description" content="Smash through colorful tower stacks in this addictive arcade game.">
+    <meta name="twitter:image" content="https://sparkplaygames.com/assets/covers/stack-fire-ball.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "Stack Fire Ball",
+      "description": "Smash through colorful platforms in this addictive arcade game.",
+      "genre": ["Arcade", "Casual", "Action"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Any",
+      "url": "https://sparkplaygames.com/games/stack-fire-ball/",
+      "image": "https://sparkplaygames.com/assets/covers/stack-fire-ball.svg",
+      "publisher": {"@type":"Organization","name":"Spark Play Games","url":"https://sparkplaygames.com"},
+      "offers": {"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+    }
+    </script>
+    <style>
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .game-frame {
+                height: 400px;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://sparkplaygames.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Games",
+                "item": "https://sparkplaygames.com/games/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Stack Fire Ball",
+                "item": "https://sparkplaygames.com/games/stack-fire-ball/"
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Stack Fire Ball",
+        "description": "Addictive tower smashing arcade game where you tap and hold to break through colorful platforms while avoiding traps.",
+        "genre": ["Arcade", "Casual", "Skill"],
+        "applicationCategory": "Game",
+        "operatingSystem": "Any",
+        "url": "https://sparkplaygames.com/games/stack-fire-ball/",
+        "image": "https://sparkplaygames.com/assets/covers/stack-fire-ball.svg",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Spark Play Games",
+            "url": "https://sparkplaygames.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="../../index.html" class="text-xl font-bold text-brand">Spark Play Games</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../../index.html" class="text-gray-700 hover:text-brand">Home</a>
+                    <a href="../../genre/index.html" class="text-gray-700 hover:text-brand">Genres</a>
+                    <a href="../../best/index.html" class="text-gray-700 hover:text-brand">Collections</a>
+                    <a href="../../about/index.html" class="text-gray-700 hover:text-brand">About</a>
+                    <a href="../../contact/index.html" class="text-gray-700 hover:text-brand">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-700 hover:text-brand" onclick="toggleMobileMenu()">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="../../index.html" class="block text-gray-700 hover:text-brand py-2">Home</a>
+                <a href="../../genre/index.html" class="block text-gray-700 hover:text-brand py-2">Genres</a>
+                <a href="../../best/index.html" class="block text-gray-700 hover:text-brand py-2">Collections</a>
+                <a href="../../about/index.html" class="block text-gray-700 hover:text-brand py-2">About</a>
+                <a href="../../contact/index.html" class="block text-gray-700 hover:text-brand py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <nav class="text-sm mb-8">
+            <ol class="flex space-x-2 text-gray-500">
+                <li><a href="../../index.html" class="hover:text-brand">Home</a></li>
+                <li>/</li>
+                <li><a href="../index.html" class="hover:text-brand">Games</a></li>
+                <li>/</li>
+                <li class="text-gray-900">Stack Fire Ball</li>
+            </ol>
+        </nav>
+
+        <div class="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+            <div class="p-6">
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-900 mb-4">Stack Fire Ball</h1>
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Arcade</span>
+                            <span class="text-gray-500">•</span>
+                            <span class="text-gray-600">Free to Play</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <iframe 
+                    src="https://www.onlinegames.io/games/2021/unity/stack-fire-ball/index.html"
+                    class="game-frame"
+                    sandbox="allow-scripts allow-same-origin allow-pointer-lock"
+                    allow="fullscreen; autoplay; clipboard-read; clipboard-write; gamepad *"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    loading="lazy"
+                    title="Stack Fire Ball Game">
+                </iframe>
+                <div class="frame-fallback" role="note" style="margin-top:12px">
+                    If the game frame is blocked by the source,
+                    <a href="https://www.onlinegames.io/games/2021/unity/stack-fire-ball/index.html" target="_blank" rel="noopener">open it in a new tab</a>.
+                </div>
+                <div id="game-error" class="hidden bg-red-50 border border-red-200 rounded-lg p-6 text-center mt-4">
+                    <h3 class="text-red-800 font-semibold mb-2">Game Loading Issue</h3>
+                    <p class="text-red-600 mb-4">The game couldn't load in the embedded player. This might be due to browser restrictions.</p>
+                    <a href="https://www.onlinegames.io/games/2021/unity/stack-fire-ball/index.html" target="_blank" rel="noopener" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+                        Play in New Tab
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">About Stack Fire Ball</h2>
+                    <div class="prose prose-lg max-w-none text-gray-700 space-y-4">
+                        <p>Get ready for an incredibly addictive arcade experience that combines simple mechanics with challenging gameplay in Stack Fire Ball. This vibrant and fast-paced game puts you in control of a bouncing ball that must smash through colorful tower platforms while avoiding dangerous obstacles and traps along the way.</p>
+
+                        <p>The gameplay concept is brilliantly simple yet deeply engaging: tap and hold to make your fire ball accelerate downward, smashing through the colored platforms of each tower. Release at the right moment to slow down and avoid the deadly black platforms that will end your run. The timing-based mechanics create a perfect balance between accessibility and challenge that keeps players coming back for more.</p>
+
+                        <p>What makes Stack Fire Ball truly special is its satisfying progression system and visual feedback. As you smash through platforms, you'll experience incredibly satisfying destruction effects, particle explosions, and dynamic animations that make every successful hit feel rewarding. The game's vibrant color palette and smooth performance create an immersive experience that's perfect for both quick gaming sessions and extended play.</p>
+
+                        <p>Each tower presents unique challenges with different platform arrangements, obstacle patterns, and timing requirements. Some levels feature rapid-fire sequences where quick reflexes are essential, while others require patience and precision timing to navigate complex trap arrangements. The variety ensures that gameplay never becomes monotonous.</p>
+
+                        <p>The game's intuitive one-touch control scheme makes it perfect for mobile play, but it's equally enjoyable on desktop. The responsive controls ensure that success and failure feel entirely in your hands, creating that "just one more try" addictive quality that defines great arcade games. Combined with increasingly challenging levels and satisfying visual effects, Stack Fire Ball delivers pure arcade entertainment.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">How do I control the fire ball?</h3>
+                            <p class="text-gray-700">The controls are simple and intuitive. On desktop, click and hold your mouse button to make the ball accelerate downward through the platforms. Release the button to slow down or stop. On mobile devices, tap and hold anywhere on the screen. The key is timing—hold to smash through colored platforms quickly, but release before hitting the dangerous black platforms that will destroy your ball.</p>
+                        </div>
+                        
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">What happens if I hit a black platform?</h3>
+                            <p class="text-gray-700">Black platforms are deadly obstacles that will immediately end your current run if your ball touches them. These platforms cannot be destroyed and serve as strategic barriers that require you to slow down and carefully time your movements. When you hit a black platform, your ball will shatter and you'll need to restart the level, but don't worry—each attempt helps you learn the platform patterns better.</p>
+                        </div>
+
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Are there different types of levels or towers?</h3>
+                            <p class="text-gray-700">Yes! Stack Fire Ball features a wide variety of tower designs and configurations. Some towers have densely packed platforms requiring rapid-fire smashing, while others feature sparse arrangements that test your precision timing. You'll encounter towers with moving platforms, rotating obstacles, narrow gaps, and complex patterns of black platforms that create unique challenges. Each tower type requires slightly different strategies to master.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Game Features</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Simple tap-and-hold controls</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Satisfying destruction effects</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Colorful platform towers</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Challenging obstacle patterns</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Endless replayability</li>
+                        <li class="flex items-center"><span class="w-2 h-2 bg-brand rounded-full mr-3"></span>Mobile-optimized gameplay</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Similar Games</h3>
+                    <div class="space-y-4">
+                        <a href="/games/love-tester/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Love Tester</h4>
+                            <p class="text-sm text-gray-600">Quick arcade fun</p>
+                        </a>
+                        <a href="/games/toonz-io/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Toonz.io</h4>
+                            <p class="text-sm text-gray-600">Multiplayer arcade action</p>
+                        </a>
+                        <a href="/games/voxel-world/" class="block p-3 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors">
+                            <h4 class="font-semibold text-gray-900">Voxel World</h4>
+                            <p class="text-sm text-gray-600">Creative building game</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>&copy; 2025 Spark Play Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const iframe = document.querySelector('iframe');
+        const gameError = document.getElementById('game-error');
+        
+        // Analytics event placeholders for future GA4 integration
+        function trackEvent(eventName, eventData) {
+            // Placeholder for Google Analytics tracking
+            // Example: gtag('event', eventName, eventData);
+            console.log('Analytics event:', eventName, eventData);
+        }
+        
+        // Track game view
+        trackEvent('game_view', {
+            game_name: 'Stack Fire Ball',
+            game_genre: 'Arcade'
+        });
+        
+        iframe.addEventListener('error', function() {
+            trackEvent('iframe_error', {
+                game_name: 'Stack Fire Ball',
+                error_type: 'iframe_load_error'
+            });
+            iframe.style.display = 'none';
+            gameError.classList.remove('hidden');
+        });
+        
+        // Fallback timeout check
+        setTimeout(function() {
+            try {
+                iframe.contentDocument;
+            } catch (e) {
+                // Cross-origin restriction detected, show fallback
+                trackEvent('iframe_error', {
+                    game_name: 'Stack Fire Ball',
+                    error_type: 'cross_origin_restriction'
+                });
+                iframe.style.display = 'none';
+                gameError.classList.remove('hidden');
+            }
+        }, 5000);
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

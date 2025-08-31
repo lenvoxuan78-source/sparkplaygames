@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Cartoon elements -->
+  <g fill="#fff" opacity="0.2">
+    <!-- Explosion bursts -->
+    <g transform="translate(150,150)">
+      <path d="M0,0 L15,-30 L30,0 L60,-15 L30,30 L15,60 L0,30 L-30,15 Z"/>
+    </g>
+    <g transform="translate(1000,400) scale(0.7)">
+      <path d="M0,0 L15,-30 L30,0 L60,-15 L30,30 L15,60 L0,30 L-30,15 Z"/>
+    </g>
+  </g>
+  
+  <!-- Cartoon character -->
+  <g transform="translate(100,280)" fill="#fff" opacity="0.8" filter="url(#shadow)">
+    <!-- Body -->
+    <rect x="30" y="60" width="40" height="60" rx="20"/>
+    <!-- Head -->
+    <circle cx="50" cy="40" r="25"/>
+    <!-- Arms -->
+    <rect x="0" y="70" width="30" height="15" rx="7"/>
+    <rect x="70" y="70" width="30" height="15" rx="7"/>
+    <!-- Legs -->
+    <rect x="35" y="120" width="15" height="30" rx="7"/>
+    <rect x="55" y="120" width="15" height="30" rx="7"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="650" y="280" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="#fff" filter="url(#shadow)" text-anchor="middle">
+    ToonZ
+  </text>
+  <text x="750" y="280" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="#fff" filter="url(#shadow)">
+    .io
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="650" y="350" font-family="Arial, sans-serif" font-size="26" fill="#fff" opacity="0.9" text-anchor="middle">
+    Multiplayer • IO Game • Arena
+  </text>
+  
+  <!-- Brand -->
+  <text x="650" y="550" font-family="Arial, sans-serif" font-size="20" fill="#fff" opacity="0.8" text-anchor="middle">
+    Spark Play Games
+  </text>
+</svg>

@@ -1,0 +1,79 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ecfdf5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Peaceful pattern overlay -->
+  <defs>
+    <pattern id="leaves" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="2" fill="rgba(255,255,255,0.1)"/>
+      <ellipse cx="25" cy="25" rx="8" ry="4" fill="rgba(255,255,255,0.05)" transform="rotate(45 25 25)"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#leaves)"/>
+  
+  <!-- Logo/Brand area -->
+  <circle cx="150" cy="150" r="40" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="150" cy="150" r="20" fill="white"/>
+  <text x="150" y="158" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-weight="bold" font-size="16">SPG</text>
+  
+  <!-- Main title -->
+  <text x="600" y="220" text-anchor="middle" fill="url(#textGradient)" font-family="Arial, sans-serif" font-weight="bold" font-size="72">
+    Idle Games
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="280" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-family="Arial, sans-serif" font-weight="normal" font-size="32">
+    Relaxing Progressive Gaming
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="340" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="Arial, sans-serif" font-weight="normal" font-size="22">
+    Games that play themselves while you relax
+  </text>
+  
+  <!-- Idle game elements -->
+  <g opacity="0.4">
+    <!-- Progress bars -->
+    <rect x="900" y="420" width="120" height="12" rx="6" fill="rgba(255,255,255,0.3)"/>
+    <rect x="900" y="420" width="80" height="12" rx="6" fill="white"/>
+    
+    <rect x="900" y="450" width="120" height="12" rx="6" fill="rgba(255,255,255,0.3)"/>
+    <rect x="900" y="450" width="100" height="12" rx="6" fill="white"/>
+    
+    <rect x="900" y="480" width="120" height="12" rx="6" fill="rgba(255,255,255,0.3)"/>
+    <rect x="900" y="480" width="60" height="12" rx="6" fill="white"/>
+    
+    <!-- Growing plant/tree -->
+    <rect x="195" y="480" width="6" height="40" fill="rgba(139,69,19,0.6)"/>
+    <circle cx="198" cy="465" r="12" fill="rgba(255,255,255,0.5)"/>
+    <circle cx="185" cy="470" r="8" fill="rgba(255,255,255,0.4)"/>
+    <circle cx="211" cy="472" r="10" fill="rgba(255,255,255,0.4)"/>
+    
+    <!-- Money/coins -->
+    <circle cx="1080" cy="380" r="15" fill="rgba(255,215,0,0.8)"/>
+    <text x="1080" y="385" text-anchor="middle" fill="#059669" font-family="Arial, sans-serif" font-weight="bold" font-size="12">$</text>
+    
+    <circle cx="1110" cy="395" r="12" fill="rgba(255,215,0,0.7)"/>
+    <text x="1110" y="399" text-anchor="middle" fill="#059669" font-family="Arial, sans-serif" font-weight="bold" font-size="10">$</text>
+    
+    <!-- Auto-clicker indicator -->
+    <rect x="150" y="380" width="40" height="40" rx="8" fill="rgba(255,255,255,0.3)"/>
+    <text x="170" y="405" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="18">⟳</text>
+  </g>
+  
+  <!-- Brand text -->
+  <text x="600" y="580" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="Arial, sans-serif" font-weight="normal" font-size="18">
+    Spark Play Games
+  </text>
+</svg>

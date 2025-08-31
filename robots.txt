@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sparkplaygames.com/sitemap.xml
+
+# Crawl-delay for well-behaved bots
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all game content
+Allow: /games/
+Allow: /genre/
+Allow: /best/
+Allow: /assets/
