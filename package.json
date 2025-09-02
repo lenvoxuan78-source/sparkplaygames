@@ -1,0 +1,22 @@
+{
+  "name": "spark-play-games",
+  "version": "1.0.0",
+  "description": "Free HTML5 Games Platform",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "build-css-prod": "tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify",
+    "dev": "npm run build-css",
+    "build": "npm run build-css-prod"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  },
+  "keywords": [
+    "html5-games",
+    "browser-games",
+    "free-games",
+    "tailwindcss"
+  ],
+  "author": "Spark Play Games",
+  "license": "MIT"
+}

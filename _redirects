@@ -1,1 +1,6 @@
 https://www.sparkplaygames.com/*  https://sparkplaygames.com/:splat  301
+
+# 410 - Gone (removed games/content)
+# Add removed game URLs here when content is permanently removed
+/games/gta-simulator/*  /games/  410
+/games/stickman-gta-city/*  /games/  410
